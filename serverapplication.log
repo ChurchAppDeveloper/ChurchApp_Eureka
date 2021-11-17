@@ -1,0 +1,117 @@
+2021-10-07 09:29:01.222  INFO 6268 --- [main] c.church.eureka.ChurchEurekaApplication  : No active profile set, falling back to default profiles: default
+2021-10-07 09:29:02.024  WARN 6268 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-10-07 09:29:02.054  WARN 6268 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2021-10-07 09:29:02.218  INFO 6268 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b8dbf22f-7dea-3684-a90f-3a3bc403d3bb
+2021-10-07 09:29:02.673  INFO 6268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9875 (http)
+2021-10-07 09:29:02.683  INFO 6268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 09:29:02.683  INFO 6268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-10-07 09:29:02.850  INFO 6268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 09:29:02.850  INFO 6268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1605 ms
+2021-10-07 09:29:02.975  WARN 6268 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-10-07 09:29:02.975  INFO 6268 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-07 09:29:02.986  INFO 6268 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5ca4dce5
+2021-10-07 09:29:03.998 DEBUG 6268 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-10-07 09:29:04.057  INFO 6268 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-10-07 09:29:04.116  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-10-07 09:29:04.117  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-10-07 09:29:04.412  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-10-07 09:29:04.412  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-10-07 09:29:04.737  WARN 6268 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-10-07 09:29:04.737  INFO 6268 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-07 09:29:04.962  INFO 6268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-07 09:29:04.972 DEBUG 6268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-10-07 09:29:05.029 DEBUG 6268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2021-10-07 09:29:05.040 DEBUG 6268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-10-07 09:29:05.060 DEBUG 6268 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-10-07 09:29:05.813  INFO 6268 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-10-07 09:29:05.999 DEBUG 6268 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : Cannot resolve template loader path [classpath:/templates/] to [java.io.File]: using SpringTemplateLoader as fallback
+
+java.io.FileNotFoundException: class path resource [templates/] cannot be resolved to absolute file path because it does not reside in the file system: jar:file:/C:/Users/Soundar/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.2.7.RELEASE/spring-cloud-netflix-eureka-server-2.2.7.RELEASE.jar!/templates/
+	at org.springframework.util.ResourceUtils.getFile(ResourceUtils.java:217) ~[spring-core-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.core.io.AbstractFileResolvingResource.getFile(AbstractFileResolvingResource.java:154) ~[spring-core-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.getTemplateLoaderForPath(FreeMarkerConfigurationFactory.java:345) ~[spring-context-support-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.createConfiguration(FreeMarkerConfigurationFactory.java:297) ~[spring-context-support-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.afterPropertiesSet(FreeMarkerConfigurer.java:120) ~[spring-webmvc-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.14.RELEASE.jar:5.2.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236) ~[spring-boot-2.3.10.RELEASE.jar:2.3.10.RELEASE]
+	at com.church.eureka.ChurchEurekaApplication.main(ChurchEurekaApplication.java:18) ~[classes/:na]
+
+2021-10-07 09:29:06.038  WARN 6268 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-07 09:29:06.080  INFO 6268 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-10-07 09:29:06.109  INFO 6268 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-10-07 09:29:06.110  INFO 6268 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-10-07 09:29:06.116  INFO 6268 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1633579146115 with initial instances count: 0
+2021-10-07 09:29:06.153  INFO 6268 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-10-07 09:29:06.155  INFO 6268 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9875/eureka/]
+2021-10-07 09:29:06.322  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-10-07 09:29:06.322  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-10-07 09:29:06.322  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-10-07 09:29:06.322  INFO 6268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-10-07 09:29:06.406  INFO 6268 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9875/eureka/
+2021-10-07 09:29:06.414  INFO 6268 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-10-07 09:29:06.415  INFO 6268 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-10-07 09:29:06.492  INFO 6268 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2021-10-07 09:29:06.504  INFO 6268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-10-07 09:29:06.567  INFO 6268 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
+2021-10-07 09:29:06.570  INFO 6268 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-10-07 09:29:06.585  INFO 6268 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-10-07 09:29:06.585  INFO 6268 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-10-07 09:29:06.595  INFO 6268 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-10-07 09:29:06.595  INFO 6268 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-10-07 09:29:06.596  INFO 6268 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-10-07 09:29:06.596  INFO 6268 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-10-07 09:29:06.596  INFO 6268 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-10-07 09:29:06.604  INFO 6268 --- [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-10-07 09:29:06.622  INFO 6268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9875 (http) with context path ''
+2021-10-07 09:29:06.623  INFO 6268 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9875
+2021-10-07 09:29:07.189  INFO 6268 --- [main] c.church.eureka.ChurchEurekaApplication  : Started ChurchEurekaApplication in 7.865 seconds (JVM running for 9.2)
+2021-10-07 09:30:06.605  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-10-07 09:31:06.616  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2021-10-07 09:32:06.628  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2021-10-07 09:33:06.630  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-10-07 09:34:06.645  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2021-10-07 09:35:06.652  INFO 6268 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2021-10-07 09:35:25.238  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-10-07 09:35:25.240  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application GATEWAY with eureka with status DOWN
+2021-10-07 09:35:25.578  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-10-07 09:35:25.588  WARN 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+2021-10-07 09:35:25.589  WARN 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+2021-10-07 09:35:25.613  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2021-10-07 09:35:25.615  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2021-10-07 09:35:25.630  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2021-10-07 09:35:25.636  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-07 09:35:25.651  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-10-07 09:35:25.652  INFO 6268 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
